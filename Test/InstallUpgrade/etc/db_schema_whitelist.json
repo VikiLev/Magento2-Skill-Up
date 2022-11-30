@@ -1,0 +1,20 @@
+{
+    "test_table_2": {
+        "column": {
+            "entity_id": true,
+            "title": true,
+            "identifier": true,
+            "content": true,
+            "creation_time": true,
+            "update_time": true,
+            "is_active": true
+        },
+        "index": {
+            "TEST_TABLE_2_IDENTIFIER": true,
+            "TEST_TABLE_2_TITLE_IDENTIFIER_CONTENT": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
