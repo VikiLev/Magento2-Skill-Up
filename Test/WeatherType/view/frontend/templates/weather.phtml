@@ -1,0 +1,13 @@
+<?php
+/** @var $block Test\WeatherType\Block\Weather */
+?>
+
+<?php
+$city = $block->getCustomerCity();
+if ($city) {
+    $weather = $block->getWeather($city);
+    echo 'The temperature of the city of ' . $city . ' is ' . $weather . ' degrees Celsius';
+} else {
+    echo 'Login to know the weather of your city ';
+}
+?>

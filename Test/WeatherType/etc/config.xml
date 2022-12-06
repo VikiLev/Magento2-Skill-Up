@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <weather_api>
+            <settings>
+                <url_weathere>https://api.openweathermap.org/data/2.5/weather?</url_weathere>
+                <url_coordinatese>https://api.openweathermap.org/geo/1.0/direct?q=</url_coordinatese>
+                <api_key>e5641ddc6f288d5a569d0b99aa0b76ca</api_key>
+                <units>metric</units>
+            </settings>
+        </weather_api>
+    </default>
+</config>

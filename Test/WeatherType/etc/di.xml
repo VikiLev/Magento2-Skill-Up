@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Test\WeatherType\Api\ProductRepositoryInterface"
+                type="Test\WeatherType\Model\Api\ProductRepository" />
+    <preference for="Test\WeatherType\Api\RequestItemInterface"
+                type="Test\WeatherType\Model\Api\RequestItem" />
+    <preference for="Test\WeatherType\Api\ResponseItemInterface"
+                type="Test\WeatherType\Model\Api\ResponseItem" />
+</config>
