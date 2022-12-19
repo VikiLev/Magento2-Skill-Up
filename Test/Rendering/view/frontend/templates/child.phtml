@@ -1,0 +1,11 @@
+<?php
+/** @var $block Magento\Framework\View\Element\Template */
+?>
+<?php
+$viewModel = $block->getData('view_model');
+?>
+<div style="background-color: palevioletred">
+    <p>Test Child</p>
+</div>
+<?=  $viewModel->getBaseUrl(); ?>
+<?=  'Hello from ViewModel'?>

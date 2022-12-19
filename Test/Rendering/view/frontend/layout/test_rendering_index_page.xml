@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="rendering.block" template="Test_Rendering::test.phtml">
+                <block class="Magento\Framework\View\Element\Template" name="rendering.block.child" template="Test_Rendering::child.phtml">
+                    <arguments>
+                        <argument name="view_model" xsi:type="object">Test\Rendering\ViewModel\ViewModel</argument>
+                    </arguments>
+                </block>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
