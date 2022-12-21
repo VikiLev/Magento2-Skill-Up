@@ -1,0 +1,20 @@
+<?php
+/** @var $block Magento\Framework\View\Element\Template */
+?>
+<?php
+$textMessage = 'Widget';
+?>
+<div style="background-color: hotpink">
+    <button id="btn_click_4" ><?= __('Click Js Widget')?></button>
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Test_Js/js/widget": {
+            "message": "<?= $textMessage ?>"
+            }
+
+        }
+    }
+</script>

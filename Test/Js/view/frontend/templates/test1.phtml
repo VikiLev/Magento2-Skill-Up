@@ -1,0 +1,16 @@
+<?php
+/** @var $block Magento\Framework\View\Element\Template */
+?>
+<div style="background-color: #9ba8b4">
+    <button id="btn_click"><?= __('Click Js')?></button>
+</div>
+
+<script>
+    require([
+        'jquery'
+    ], function ($) {
+        $('#btn_click').click(function () {
+            alert('test js');
+        });
+    });
+</script>

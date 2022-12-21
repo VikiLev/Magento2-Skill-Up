@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="js.block" template="Test_Js::test1.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="js.block.add" template="Test_Js::test2.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="js.block.addd" template="Test_Js::test3.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="js.block.widget" template="Test_Js::widget.phtml" />
+        </referenceContainer>
+    </body>
+</page>
