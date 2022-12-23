@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+<!--            <block class="Magento\Framework\View\Element\Template" name="rendering.block.ui" template="Test_Ui::ui.phtml"/>-->
+            <block class="Magento\Framework\View\Element\Template" name="rendering_block_ui_in_layout" template="Test_Ui::ui_in_layout.phtml">
+                <arguments>
+                    <argument name="jsLayout" xsi:type="array">
+                        <item name="types" xsi:type="array"/>
+                        <item name="components" xsi:type="array">
+                            <item name="customUiComponentLayout" xsi:type="array">
+                                <item name="component" xsi:type="string">Test_Ui/js/ui</item>
+                                <item name="config" xsi:type="array">
+                                    <item name="template" xsi:type="string">Test_Ui/ui</item>
+                                    <item name="textFromPhp" xsi:type="string">Some Text</item>
+                                </item>
+                                <item name="children" xsi:type="array">
+                                    <item name="customUiComponentChildLayout" xsi:type="array">
+                                        <item name="component" xsi:type="string">Test_Ui/js/uiChild</item>
+                                        <item name="config" xsi:type="array">
+                                            <item name="template" xsi:type="string">Test_Ui/uiChild</item>
+                                            <item name="displayArea" xsi:type="string">childComponentCustom</item>
+                                            <item name="textFromPhp" xsi:type="string">Some Text from Child</item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

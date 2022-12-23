@@ -1,0 +1,33 @@
+<?php
+$textFromPhp = 'Some text from php';
+?>
+<div class="" data-bind="scope: 'customUiComponent'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app":{
+                "components": {
+                    "customUiComponent": {
+                        "component": "Test_Ui/js/ui",
+                        "config": {
+                        "template": "Test_Ui/ui",
+                        "textFromPhp": "<?= $textFromPhp ?>"
+                        },
+                        "children": {
+                          "customUiComponentChild": {
+                          "component": "Test_Ui/js/uiChild",
+                          "config": {
+                          "template": "Test_Ui/uiChild",
+                          "textFromPhp": "<?= $textFromPhp ?>",
+                           "displayArea": "childComponentCustom"
+                          }
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+</script>
