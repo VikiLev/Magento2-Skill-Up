@@ -1,0 +1,23 @@
+Test TEst!!!
+<div class="" data-bind="scope: 'customComponentObservable'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app":{
+                "components": {
+                    "customComponentObservable": {
+                        "component": "Test_KoObservable/js/observable",
+                        "config": {
+                        "template": "Test_KoObservable/observable",
+                        "diceUrl": "<?= $block->escapeJs($block->getUrl('test_ko_observable/index/dice'))?>"
+
+                    }
+                }
+            }
+        }
+    }
+  }
+</script>

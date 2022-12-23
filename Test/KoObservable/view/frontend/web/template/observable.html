@@ -1,0 +1,15 @@
+
+<div  style="background-color: silver">
+    <p>Test observable</p>
+
+    <!-- ko if: canShow -->
+    <span data-bind="text: diceNumber"></span>
+    <!-- /ko -->
+
+    <!-- ko ifnot: canShow -->
+    <span data-bind="text: 'Test Observable'"></span>
+    <!-- /ko -->
+
+    <button data-bind="text: 'Click Me', click:clickButton"></button>
+
+</div>
