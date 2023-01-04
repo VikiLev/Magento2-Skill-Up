@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Test_Grid::grid" title="Grid" translate="title" module="Test_Grid" sortOrder="100"
+             parent="Magento_Backend::content_elements" action="test_grid/index/index" resource="Magento_Cms::page"/>
+    </menu>
+</config>
