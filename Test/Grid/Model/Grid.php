@@ -9,6 +9,9 @@ use Magento\Framework\Model\AbstractModel;
 
 class Grid extends AbstractModel
 {
+    public const STATUS_ENABLED = 1;
+    public const STATUS_DISABLED = 0;
+
     /**
      * Prefix of model events names
      *
