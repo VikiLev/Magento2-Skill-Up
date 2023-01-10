@@ -1,0 +1,12 @@
+<?php
+/** @var $block Magento\Framework\View\Element\Template */
+?>
+<?php
+$viewModel = $block->getData('view_model');
+?>
+<?php if ($viewModel->hasFreeShipping()): ?>
+    <div style="background-color: pink">
+        <?= __('Free shipping') ?>
+    </div>
+<?php endif; ?>
+

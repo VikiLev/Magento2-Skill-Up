@@ -1,0 +1,21 @@
+
+<div class="" data-bind="scope: 'FreeShipping'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app":{
+                "components": {
+                    "FreeShipping": {
+                        "component": "Test_FreeShipping/js/freeShipping",
+                        "config": {
+                        "template": "Test_FreeShipping/freeShipping"
+                    }
+                }
+            }
+        }
+    }
+  }
+</script>

@@ -1,0 +1,11 @@
+
+<div  style="background-color: silver">
+    <!-- ko if: freeShippingData().hasFreeShippingQuote -->
+    <span data-bind="text: 'Free shipping'"></span>
+    <!-- /ko -->
+    <!-- ko ifnot: freeShippingData().hasFreeShippingQuote -->
+    <span data-bind="html: $t('%1 Left for free shipping').replace('%1', freeShippingData().getLeftFreeShipping)"></span>
+    <!-- /ko -->
+
+</div>
+
