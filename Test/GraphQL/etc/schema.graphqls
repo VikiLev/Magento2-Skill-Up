@@ -1,0 +1,11 @@
+type Query {
+    getRecords : [getAllRecords]
+    @resolver( class: "Test\\GraphQL\\Model\\Resolver\\GraphQLRecords") @doc(description: "Get All  Records")
+}
+
+type getAllRecords {
+    id : Int  @doc(description: "Primary Id"),
+    custom_field_1 : String  @doc(description: "Custom Field 1"),
+    custom_field_2 : String  @doc(description: "Custom Field 1"),
+    status : Int  @doc(description: "Status"),
+}
