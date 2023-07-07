@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add action="storereviews/review/index"
+             id="Test::StoreReviews"
+             module="Test_StoreReviews"
+             parent="Magento_Customer::customer"
+             resource="Test_StoreReviews::all"
+             sortOrder="777"
+             title="Store Reviews"/>
+    </menu>
+</config>

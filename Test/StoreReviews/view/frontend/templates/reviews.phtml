@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * @var Test\StoreReviews\Block\Index $block
+ */
+?>
+<?php
+$reviews = $block->getReviews();
+foreach ($reviews as $review) :?>
+    <div>
+        <?php
+        echo 'title:' . $review->getTitle();
+        echo 'review:' . $review->getReview();
+        echo 'pros:' . $review->getPros();
+        echo 'cons:' . $review->getCons();
+        ?>
+    </div>
+<?php endforeach;
+?>
