@@ -1,0 +1,13 @@
+<div class="component-class">
+    <button data-bind="click: confirmButton" type="button" id="confirm">Quick View</button>
+    <span data-bind="text: productSku">SKU</span>
+</div>
+
+<div data-bind="attr: { 'id': productSku }" style="display:none">
+    <div class="product-item-details">
+        <img data-bind="attr: { src: getProductImage(getProduct().image)}"/>
+        <p class="product-item-sku" data-bind="text:getProduct().sku ">
+        <p class="product-item-name" data-bind="text:getProduct().name ">
+        <p class="product-item-price" data-bind="text:getProduct().price ">
+    </div>
+</div>

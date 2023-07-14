@@ -1,0 +1,28 @@
+<?php /** @var \Test\QuickView\Block\QuickView $block */ ?>
+<?php $productSku = $block->getProductSku() ?>
+<?= $productSku ?>
+
+<div class="" data-bind="scope: 'quickView-<?= $productSku ?>'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app":{
+                "components": {
+                    "quickView-<?= $productSku ?>": {
+                        "component": "Test_QuickView/js/view",
+                        "config": {
+                        "template": "Test_QuickView/popup",
+                        "url": "<?= $block->getUrl('view/ajax/result') ?>",
+                        "productSku": "<?= $productSku ?>"
+                    }
+                }
+            }
+        }
+    }
+  }
+
+
+</script>
