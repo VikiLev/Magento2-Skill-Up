@@ -1,0 +1,31 @@
+<?php /** @var \Magento\Review\Block\Product\Review $block */ ?>
+<div id="product-review-container" data-role="product-review"></div>
+<?= $block->getChildHtml() ?>
+
+<?php $productId = $block->getProductId() ?>
+<?php $viewModel = $block->getData('view_model');?>
+<?php $reviews = $viewModel->getReviews($productId);?>
+
+<div class="" data-bind="scope: 'review_new'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app":{
+                "components": {
+                    "review_new": {
+                        "component": "Test_Review/js/review",
+                        "config": {
+                        "template": "Test_Review/review",
+                        "url": "<?= $block->getUrl('review/review/result') ?>",
+                        "reviews": <?= \Zend_Json::encode($reviews) ?>,
+                        "productId": "<?= $productId ?>"
+                    }
+                }
+            }
+        }
+    }
+  }
+</script>

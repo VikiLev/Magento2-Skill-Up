@@ -1,0 +1,13 @@
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="product.info.details">
+            <block class="Magento\Review\Block\Product\Review" name="reviews.tab.new" as="reviews_new" template="Test_Review::review_new.phtml" group="detailed_info">
+                <arguments>
+                    <argument name="sort_order" xsi:type="string">40</argument>
+                    <argument name="view_model" xsi:type="object">Test\Review\ViewModel\Items</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
+    </body>
+</page>
