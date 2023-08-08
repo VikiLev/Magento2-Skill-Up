@@ -1,0 +1,9 @@
+<p data-bind="i18n: 'banner'"></p>
+<div class="banner-slider">
+    <!-- ko foreach: banners -->
+    <a data-bind="attr: { href: $data.link }">
+        <img data-bind="attr: { src: $data.imageUrl }" alt="Banner Image">
+    </a>
+    <!-- /ko -->
+</div>
+<div data-bind="afterRender: initializeBannerSlider()"></div>

@@ -1,0 +1,26 @@
+<?php
+/** @var $block Test\BannerSlider\Block\BannerSlider */
+echo "test slider";
+?>
+<div class="" data-bind="scope: 'customUiComponent'">
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app":{
+                "components": {
+                    "customUiComponent": {
+                        "component": "Test_BannerSlider/js/slider",
+                        "config": {
+                        "template": "Test_BannerSlider/slider",
+                        "banners": <?= \Zend_Json::encode($block->getBanners()) ?>
+                    }
+                }
+            }
+        }
+    }
+  }
+</script>
